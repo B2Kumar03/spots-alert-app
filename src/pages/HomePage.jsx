@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div className="p-6 text-center space-y-4">
       <h1 className="text-3xl font-bold text-blue-900 flex justify-center items-center gap-2">
-        <FaMapMarkedAlt className="text-green-600" /> Welcome to <span className="underline">Spots Alert</span>
+        <FaMapMarkedAlt className="text-green-600" /> Welcome to <span className="underline md:text-2xl text-xl">Spots Alert</span>
       </h1>
 
       {location ? (
