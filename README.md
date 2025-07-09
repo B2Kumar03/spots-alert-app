@@ -11,8 +11,7 @@ A React-based web application that helps users find nearby adventure spots like 
 - Fetch and display nearby adventure spots using Geoapify API
 -  Shows network connectivity status
 -  View route on interactive map (Leaflet)
--  Open Google Maps for real-time directions
--  Push notification when journey starts
+-  Open Google Maps for real-time direction
 -  Mobile responsive and interactive UI
 
 ## Tech Stack
