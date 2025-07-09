@@ -41,6 +41,7 @@ A **React-based web app** that helps users discover **nearby adventure spots** s
   - `Geolocation`
   - `Notification`
   - `Network Information`
+  - `Canvas`
 
 ---
 
