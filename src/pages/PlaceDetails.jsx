@@ -12,7 +12,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { FaMapMarkerAlt, FaNetworkWired, FaDirections } from "react-icons/fa";
 
-// Fix Leaflet icon bug
+
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
@@ -20,7 +20,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
 });
 
-// Canvas Overlay for Route
+
 function CanvasOverlay({ from, to }) {
   const canvasRef = useRef(null);
   const map = useMap();
@@ -134,7 +134,7 @@ function PlaceDetails() {
   return (
     <div className="p-4 mt-2 border-t border-gray-300">
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Left: Place Details */}
+   
         <div className="md:w-1/2 space-y-4">
           <h2 className="text-3xl font-extrabold text-blue-900 flex items-center gap-2">
             <FaMapMarkerAlt className="text-red-500" />
@@ -152,7 +152,7 @@ function PlaceDetails() {
             <FaNetworkWired /> <strong>Network:</strong> {networkType}
           </p>
 
-          {/* Buttons */}
+     
           <div className="space-x-4 mt-3">
             <button
               onClick={handleStart}
@@ -172,7 +172,7 @@ function PlaceDetails() {
           </div>
         </div>
 
-        {/* Right: Map */}
+  
         <div className="md:w-1/2 h-[300px] md:h-[400px] w-full relative rounded overflow-hidden shadow border">
           <MapContainer
             center={[lat, lon]}
